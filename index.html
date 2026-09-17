@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus IQ — Know your campus better than anyone</title>
+  <meta name="description" content="Campus IQ is the student platform for Kamulu University: timetable, events, dining, shuttles, campus map and an assistant that always knows.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235E6E4C'/%3E%3Cpath d='M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z' fill='none' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3Cpath d='M16 11v15' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Campus IQ — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="brand-name">Campus <em>IQ</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="assistant.html">Assistant</a>
+        <a class="nav-link" href="events.html">Events</a>
+        <a class="nav-link" href="academics.html">Academics</a>
+        <a class="nav-link" href="campus.html">Campus</a>
+        <a class="nav-link" href="community.html">Community</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <span class="kbd-hint" data-open-palette title="Open quick navigation"><kbd>⌘</kbd><kbd>K</kbd></span>
+        <a class="btn btn-primary btn-sm" href="assistant.html">Launch IQ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a class="m-link active" href="index.html"><span class="m-num">01</span>Home</a>
+      <a class="m-link" href="assistant.html"><span class="m-num">02</span>Assistant</a>
+      <a class="m-link" href="events.html"><span class="m-num">03</span>Events</a>
+      <a class="m-link" href="academics.html"><span class="m-num">04</span>Academics</a>
+      <a class="m-link" href="campus.html"><span class="m-num">05</span>Campus</a>
+      <a class="m-link" href="community.html"><span class="m-num">06</span>Community</a>
+      <a class="m-link" href="about.html"><span class="m-num">07</span>About</a>
+      <a class="m-link" href="contact.html"><span class="m-num">08</span>Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <span>Kamulu University · 2026</span>
+      <span class="mono">Nairobi, KE</span>
+    </div>
+  </div>
+
+  <!-- ===================== TICKER ===================== -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-label">LIVE</div>
+    <div class="ticker-track">
+      <span>Registration for Spring 2027 closes Fri 2 Oct — most cohorts have 6 elective credits left</span>
+      <span>Library extends to 24/7 from Mon 5 Oct (study week)</span>
+      <span>Freshers' Fair — Sat 19 Sep, Student Centre, 10:00</span>
+      <span>Hack the Campus 4.0 — teams forming now, STEM Lab</span>
+      <span>West Loop shuttles now every 20 min at peak hours</span>
+      <span>Exam timetable drops 24 Sep — IQ will flag it</span>
+      <span>Registration for Spring 2027 closes Fri 2 Oct — most cohorts have 6 elective credits left</span>
+      <span>Library extends to 24/7 from Mon 5 Oct (study week)</span>
+      <span>Freshers' Fair — Sat 19 Sep, Student Centre, 10:00</span>
+      <span>Hack the Campus 4.0 — teams forming now, STEM Lab</span>
+      <span>West Loop shuttles now every 20 min at peak hours</span>
+      <span>Exam timetable drops 24 Sep — IQ will flag it</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <span class="kicker reveal in">Kamulu University · Student Platform</span>
+            <h1 class="hero-title reveal in" data-delay="1">Know your campus <span class="accent">better</span> than anyone.</h1>
+            <p class="lead reveal in" data-delay="2">One calm place for your timetable, events, dining, shuttles and an assistant that answers in seconds — so you spend less time looking for things and more time living on campus.</p>
+            <div class="hero-ctas reveal in" data-delay="3">
+              <a class="btn btn-primary btn-lg" href="assistant.html">Open the assistant
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+              <a class="btn btn-outline" href="#services">Explore the platform</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal in" data-delay="2">
+            <div class="hero-frame">
+              <img src="assets/img/hero-campus.jpg" alt="Aerial view of the Kamulu University campus at golden hour">
+            </div>
+            <div class="float-card float-card--class">
+              <span class="fc-label">Next class · in 42 min</span>
+              <strong>MAT 201 — Linear Algebra</strong>
+              <span class="fc-sub">10:45 · STEM 204 · Prof. Achieng</span>
+            </div>
+            <div class="float-card float-card--deadline">
+              <span class="fc-label">Deadline</span>
+              <strong>Registration closes in 15 days</strong>
+              <span class="fc-sub">Fri 2 Oct · 6 elective credits left</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat reveal in" data-delay="1">
+            <div class="stat-num">12,4<em>00</em></div>
+            <div class="stat-label">Students on campus</div>
+          </div>
+          <div class="stat reveal in" data-delay="2">
+            <div class="stat-num">38</div>
+            <div class="stat-label">Clubs & societies</div>
+          </div>
+          <div class="stat reveal in" data-delay="3">
+            <div class="stat-num">24<em>/7</em></div>
+            <div class="stat-label">IQ answers, every day</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section section--cream" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">01 — Services</span>
+          <h2 class="display-lg">Everything campus, in one place.</h2>
+          <p class="lead">No more ten tabs, three group chats and a screenshot of someone's screen. Six services, one system, always up to date.</p>
+        </div>
+
+        <div class="service-tiles">
+          <a class="tile tile--featured reveal" href="assistant.html">
+            <div class="tile-glow"></div>
+            <div class="chat-mini" aria-hidden="true">
+              <div class="cm-bubble">When does registration close?</div>
+              <div class="cm-bubble me">Fri 2 Oct, 17:00 — you have 6 electives left.</div>
+            </div>
+            <div class="tile-top">
+              <span class="tile-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg>
+              </span>
+              <span class="tile-num">01</span>
+            </div>
+            <h3>IQ Assistant</h3>
+            <p>Ask anything — deadlines, directions, Wi-Fi, refunds. Answers from official campus data, in plain language, in seconds.</p>
+            <span class="tile-go">Ask IQ
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+
+          <a class="tile reveal" data-delay="1" href="events.html">
+            <div class="tile-top">
+              <span class="tile-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              </span>
+              <span class="tile-num">02</span>
+            </div>
+            <h3>Events & Deadlines</h3>
+            <p>Everything happening, with countdowns on what matters. One tap to any event's .ics.</p>
+            <span class="tile-go">See what's on
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+
+          <a class="tile reveal" data-delay="2" href="academics.html">
+            <div class="tile-top">
+              <span class="tile-icon tile-icon--clay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+              </span>
+              <span class="tile-num">03</span>
+            </div>
+            <h3>Academics</h3>
+            <p>Your weekly timetable, room changes and a grade breakdown you can actually read.</p>
+            <span class="tile-go">Open academics
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+
+          <a class="tile reveal" href="campus.html">
+            <div class="tile-top">
+              <span class="tile-icon tile-icon--stone">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span class="tile-num">04</span>
+            </div>
+            <h3>Campus Map</h3>
+            <p>Tap a building for hours, Wi-Fi name and walking directions. Built, not scraped.</p>
+            <span class="tile-go">Find a building
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+
+          <a class="tile reveal" data-delay="1" href="campus.html#dining">
+            <div class="tile-top">
+              <span class="tile-icon tile-icon--clay">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16a8 8 0 0 1-16 0Z"/><path d="M12 11V7M9 7c0-2 1-3 1-3M15 7c0-2-1-3-1-3"/></svg>
+              </span>
+              <span class="tile-num">05</span>
+            </div>
+            <h3>Dining</h3>
+            <p>Three cafés, one credit. Menus, prices in KSh and where the queue is shortest.</p>
+            <span class="tile-go">See the menu
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+
+          <a class="tile reveal" data-delay="2" href="community.html">
+            <div class="tile-top">
+              <span class="tile-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <span class="tile-num">06</span>
+            </div>
+            <h3>Community</h3>
+            <p>38 clubs, the notice board and a place to be found. Freshers' Fair is this Saturday.</p>
+            <span class="tile-go">Find your people
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">02 — How it works</span>
+          <h2 class="display-lg">Three steps. Zero confusion.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <h3>Ask or browse</h3>
+            <p>Type a question into IQ — or just wander. The platform is built to be explored: every page links to the next thing you'd want to know.</p>
+          </div>
+          <div class="step reveal" data-delay="1">
+            <h3>Get the real answer</h3>
+            <p>IQ answers from official university data — timetables, registries, event calendars — refreshed daily at 05:00 EAT. No guesswork, no stale screenshots.</p>
+          </div>
+          <div class="step reveal" data-delay="2">
+            <h3>Act in one tap</h3>
+            <p>Add events to your calendar, join a club, book a study room or get directions. The answer is never the last step — it's the first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THIS WEEK (dark) ===================== -->
+    <section class="section section--dark">
+      <div class="container">
+        <div class="section-head section-head--split reveal">
+          <div>
+            <span class="kicker">03 — This week</span>
+            <h2 class="display-lg">The week at a glance.</h2>
+          </div>
+          <a class="text-link" href="events.html">All events & deadlines
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card reveal">
+            <div class="event-tags" style="margin:0 0 1rem"><span class="chip chip--clay">Social</span></div>
+            <h3 style="font-size:1.35rem">Freshers' Fair</h3>
+            <p style="margin:0.5rem 0 1.2rem; font-size:.92rem">All 38 clubs in one lawn. Sign-ups take ten minutes, snacks are free, the bunting is excellent.</p>
+            <div class="event-meta">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Sat 19 Sep · 10:00</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Student Centre</span>
+            </div>
+          </div>
+          <div class="card reveal" data-delay="1">
+            <div class="event-tags" style="margin:0 0 1rem"><span class="chip chip--solid">Workshop</span></div>
+            <h3 style="font-size:1.35rem">Debate League — Round 2</h3>
+            <p style="margin:0.5rem 0 1.2rem; font-size:.92rem">“Should campuses be car-free?” Six teams, one winner, and the best public of the year.</p>
+            <div class="event-meta">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Wed 23 Sep · 18:00</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Arts Auditorium</span>
+            </div>
+          </div>
+          <div class="card reveal" data-delay="2">
+            <div class="event-tags" style="margin:0 0 1rem"><span class="chip chip--clay">Tech</span></div>
+            <h3 style="font-size:1.35rem">Hack the Campus 4.0</h3>
+            <p style="margin:0.5rem 0 1.2rem; font-size:.92rem">36 hours, 50 teams, KSh 200k. This year's themes: campus services, agri-tech, accessibility.</p>
+            <div class="event-meta">
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Fri 25 Sep · 18:00</span>
+              <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> STEM Lab</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== QUOTES ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">04 — Word on the lawn</span>
+          <h2 class="display-lg">Students, unfiltered.</h2>
+        </div>
+        <div class="quotes">
+          <div class="quote reveal">
+            <div class="quote-mark">“</div>
+            <p>I stopped asking senior siblings where rooms are. IQ knows better than they do, and it answers at 2am, which is when I usually need it.</p>
+            <div class="quote-who">
+              <div class="quote-avatar">WN</div>
+              <div><b>Wanjiru N.</b><small>Year 2 · Computing</small></div>
+            </div>
+          </div>
+          <div class="quote reveal" data-delay="1">
+            <div class="quote-mark">“</div>
+            <p>The deadline sidebar alone saved my scholarship form. I have never once missed a closing date since I found it.</p>
+            <div class="quote-who">
+              <div class="quote-avatar">DO</div>
+              <div><b>David O.</b><small>Year 3 · Business</small></div>
+            </div>
+          </div>
+          <div class="quote reveal" data-delay="2">
+            <div class="quote-mark">“</div>
+            <p>Joined three clubs in one afternoon at the Fair, and the map told me which shuttle to catch back to hall. Small things, big difference.</p>
+            <div class="quote-who">
+              <div class="quote-avatar">AA</div>
+              <div><b>Amina A.</b><small>Year 1 · Humanities</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CTA ===================== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Ready to get your year right?</h2>
+          <p>Ask your first question, or just look around. Registration closes 2 October — give yourself a head start.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary btn-lg" href="assistant.html">Open the assistant</a>
+            <a class="btn btn-outline btn-lg" href="events.html">Browse events</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Campus IQ — home">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="brand-name">Campus <em>IQ</em></span>
+          </a>
+          <p>The student platform for Kamulu University — your timetable, campus, events and an assistant that always knows.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="assistant.html">IQ Assistant</a></li>
+            <li><a href="events.html">Events & deadlines</a></li>
+            <li><a href="academics.html">Timetable & grades</a></li>
+            <li><a href="campus.html">Campus map</a></li>
+            <li><a href="community.html">Clubs & community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>University</h4>
+          <ul>
+            <li><a href="about.html">About Campus IQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="community.html">Notice board</a></li>
+            <li><a href="campus.html#dining">Dining</a></li>
+            <li><a href="campus.html#shuttles">Shuttles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Say hello</h4>
+          <ul>
+            <li><a href="mailto:student.life@kamu.ac.ke">student.life@kamu.ac.ke</a></li>
+            <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+            <li><a href="campus.html">Student Centre, 1st floor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Campus IQ · Kamulu University, Nairobi</span>
+        <span class="mono">Press ⌘K to jump anywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== COMMAND PALETTE ===================== -->
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="palette-panel">
+      <div class="palette-input-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Jump to a page or service…" aria-label="Search">
+      </div>
+      <div class="palette-list"></div>
+      <div class="palette-foot"><span><b>↑ ↓</b> navigate</span><span><b>↵</b> open</span><span><b>esc</b> close</span></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

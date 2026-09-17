@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events & Deadlines — Campus IQ</title>
+  <meta name="description" content="Every event at Kamulu University with live countdowns on the deadlines that matter. Add any event to your calendar in one tap.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235E6E4C'/%3E%3Cpath d='M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z' fill='none' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3Cpath d='M16 11v15' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="events">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Campus IQ — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="brand-name">Campus <em>IQ</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="assistant.html">Assistant</a>
+        <a class="nav-link active" href="events.html">Events</a>
+        <a class="nav-link" href="academics.html">Academics</a>
+        <a class="nav-link" href="campus.html">Campus</a>
+        <a class="nav-link" href="community.html">Community</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <span class="kbd-hint" data-open-palette title="Open quick navigation"><kbd>⌘</kbd><kbd>K</kbd></span>
+        <a class="btn btn-primary btn-sm" href="assistant.html">Launch IQ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a class="m-link" href="index.html"><span class="m-num">01</span>Home</a>
+      <a class="m-link" href="assistant.html"><span class="m-num">02</span>Assistant</a>
+      <a class="m-link active" href="events.html"><span class="m-num">03</span>Events</a>
+      <a class="m-link" href="academics.html"><span class="m-num">04</span>Academics</a>
+      <a class="m-link" href="campus.html"><span class="m-num">05</span>Campus</a>
+      <a class="m-link" href="community.html"><span class="m-num">06</span>Community</a>
+      <a class="m-link" href="about.html"><span class="m-num">07</span>About</a>
+      <a class="m-link" href="contact.html"><span class="m-num">08</span>Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <span>Kamulu University · 2026</span>
+      <span class="mono">Nairobi, KE</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Events & Deadlines</span>
+        <h1 class="display-xl" style="margin-top:1.2rem">The week, <span class="accent" style="font-style:italic;color:var(--moss-deep)">without the guesswork.</span></h1>
+        <p class="lead">Every event on the official calendar, plus the deadlines that cost students points when they miss them. Countdowns update live — no screenshots, no “someone said…”.</p>
+      </div>
+    </section>
+
+    <section class="section--tight" style="padding-top:0; padding-bottom:clamp(64px,9vw,110px)">
+      <div class="container">
+        <div class="events-layout">
+          <div>
+            <!-- Featured event -->
+            <div class="event-feature reveal">
+              <div class="event-feature-media">
+                <img src="assets/img/community-life.jpg" alt="The Freshers Fair on the Great Lawn">
+              </div>
+              <div class="event-feature-body">
+                <span class="kicker">This weekend · Featured</span>
+                <h3>Freshers' Fair</h3>
+                <p>All 38 clubs and societies on one lawn. Sign-up tables, food stalls, live sets, and the annual bunting contest. Freshers: come hungry. Seniors: come recruit.</p>
+                <div class="event-feature-meta">
+                  <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Sat 19 Sep · 10:00 – 16:00</span>
+                  <span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Student Centre + Great Lawn</span>
+                </div>
+                <div>
+                  <button class="btn btn-clay btn-sm" onclick="CIQ.downloadICS({title:&quot;Freshers Fair&quot;, start:&quot;2026-09-19 10:00&quot;, end:&quot;2026-09-19 16:00&quot;, location:&quot;Student Centre + Great Lawn&quot;, desc:&quot;All 38 clubs, food stalls and live sets.&quot;})">Add to calendar
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="filter-row" role="tablist" aria-label="Filter events">
+              <button class="filter-btn active" data-filter="all">All</button>
+              <button class="filter-btn" data-filter="social">Social</button>
+              <button class="filter-btn" data-filter="academic">Academic</button>
+              <button class="filter-btn" data-filter="sports">Sports</button>
+              <button class="filter-btn" data-filter="tech">Tech</button>
+              <button class="filter-btn" data-filter="community">Community</button>
+            </div>
+
+            <!-- Event list -->
+            <div class="event-list">
+              <div class="event-row" data-tags="social community">
+                <div class="date-block"><div class="db-day">20</div><div class="db-mon">Sep</div></div>
+                <div class="event-info">
+                  <h3>Farmers' Market</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 09:00 – 14:00</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Great Lawn</span>
+                  </div>
+                  <div class="event-tags"><span class="chip">Social</span><span class="chip chip--clay">Community</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Farmers Market&quot;, start:&quot;2026-09-20 09:00&quot;, end:&quot;2026-09-20 14:00&quot;, location:&quot;Great Lawn&quot;, desc:&quot;Campus food makers and local farmers.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row event-row--clay" data-tags="academic social">
+                <div class="date-block"><div class="db-day">23</div><div class="db-mon">Sep</div></div>
+                <div class="event-info">
+                  <h3>Debate League — Round 2</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 18:00 – 20:30</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Arts Auditorium</span>
+                  </div>
+                  <div class="event-tags"><span class="chip chip--solid">Academic</span><span class="chip">Social</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Debate League Round 2&quot;, start:&quot;2026-09-23 18:00&quot;, end:&quot;2026-09-23 20:30&quot;, location:&quot;Arts Auditorium&quot;, desc:&quot;Should campuses be car-free? Six teams.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row" data-tags="academic">
+                <div class="date-block"><div class="db-day">24</div><div class="db-mon">Sep</div></div>
+                <div class="event-info">
+                  <h3>Exam Timetable Released</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 09:00 · Online</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V4H6.5A2.5 2.5 0 0 0 4 6.5v13Z"/></svg> Portal + IQ alert</span>
+                  </div>
+                  <div class="event-tags"><span class="chip chip--solid">Academic</span><span class="chip chip--clay">Big one</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Exam Timetable Released — check it&quot;, start:&quot;2026-09-24 09:00&quot;, end:&quot;2026-09-24 10:00&quot;, location:&quot;Student Portal&quot;, desc:&quot;IQ will flag it the moment it is live.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row event-row--clay" data-tags="tech">
+                <div class="date-block"><div class="db-day">25</div><div class="db-mon">Sep</div></div>
+                <div class="event-info">
+                  <h3>Hack the Campus 4.0</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Fri 18:00 → Mon 18:00</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> STEM Lab</span>
+                  </div>
+                  <div class="event-tags"><span class="chip chip--solid">Tech</span><span class="chip">Workshop</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Hack the Campus 4.0 — Kickoff&quot;, start:&quot;2026-09-25 18:00&quot;, end:&quot;2026-09-28 18:00&quot;, location:&quot;STEM Lab&quot;, desc:&quot;36 hours, 50 teams, KSh 200k prize pool.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row" data-tags="social">
+                <div class="date-block"><div class="db-day">03</div><div class="db-mon">Oct</div></div>
+                <div class="event-info">
+                  <h3>Homecoming Concert</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 18:30 – 22:00</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Great Lawn</span>
+                  </div>
+                  <div class="event-tags"><span class="chip">Social</span><span class="chip chip--clay">Live music</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Homecoming Concert&quot;, start:&quot;2026-10-03 18:30&quot;, end:&quot;2026-10-03 22:00&quot;, location:&quot;Great Lawn&quot;, desc:&quot;Alumni band plus student open stage.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row event-row--clay" data-tags="sports">
+                <div class="date-block"><div class="db-day">04</div><div class="db-mon">Oct</div></div>
+                <div class="event-info">
+                  <h3>Kamulu FC vs Rift Valley United</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 15:00 kickoff</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Sports Complex pitch</span>
+                  </div>
+                  <div class="event-tags"><span class="chip chip--solid">Sports</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Kamulu FC vs Rift Valley United&quot;, start:&quot;2026-10-04 15:00&quot;, end:&quot;2026-10-04 17:00&quot;, location:&quot;Sports Complex pitch&quot;, desc:&quot;Inter-varsity football.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row" data-tags="academic">
+                <div class="date-block"><div class="db-day">06</div><div class="db-mon">Oct</div></div>
+                <div class="event-info">
+                  <h3>Career Fair 2026</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 09:30 – 15:00</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Hall A</span>
+                  </div>
+                  <div class="event-tags"><span class="chip chip--solid">Academic</span><span class="chip">Careers</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Career Fair 2026&quot;, start:&quot;2026-10-06 09:30&quot;, end:&quot;2026-10-06 15:00&quot;, location:&quot;Hall A&quot;, desc:&quot;40+ employers, drop-in interviews from 13:00.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <div class="event-row event-row--clay" data-tags="community">
+                <div class="date-block"><div class="db-day">10</div><div class="db-mon">Oct</div></div>
+                <div class="event-info">
+                  <h3>Green Campus — Tree Planting</h3>
+                  <div class="event-meta">
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 08:00 – 11:00</span>
+                    <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> North Lawn</span>
+                  </div>
+                  <div class="event-tags"><span class="chip">Community</span><span class="chip chip--clay">Service</span></div>
+                </div>
+                <div class="event-actions">
+                  <button class="btn btn-outline btn-sm" onclick="CIQ.downloadICS({title:&quot;Green Campus Tree Planting&quot;, start:&quot;2026-10-10 08:00&quot;, end:&quot;2026-10-10 11:00&quot;, location:&quot;North Lawn&quot;, desc:&quot;200 indigenous seedlings, gloves provided.&quot;})">Add to calendar</button>
+                </div>
+              </div>
+
+              <p id="eventsEmpty" hidden style="text-align:center; padding:3rem 1rem; color:var(--stone);">Nothing in this category right now — check back after Monday's sync.</p>
+            </div>
+          </div>
+
+          <!-- Deadlines sidebar -->
+          <aside>
+            <div class="deadline-card reveal">
+              <h3>Deadlines that bite</h3>
+              <p class="dc-sub">Countdowns from today, Friday 17 Sep.</p>
+
+              <div class="deadline-item" data-countdown="2026-09-24">
+                <div class="deadline-count"><b>7</b><small>days</small></div>
+                <div>
+                  <h4>Exam timetable released</h4>
+                  <span class="dl-date">Thu 24 Sep · 09:00</span>
+                </div>
+              </div>
+              <div class="deadline-item" data-countdown="2026-10-02">
+                <div class="deadline-count"><b>15</b><small>days</small></div>
+                <div>
+                  <h4>Registration closes — Spring 2027</h4>
+                  <span class="dl-date">Fri 2 Oct · 17:00</span>
+                </div>
+              </div>
+              <div class="deadline-item" data-countdown="2026-10-09">
+                <div class="deadline-count"><b>22</b><small>days</small></div>
+                <div>
+                  <h4>Merit scholarship form</h4>
+                  <span class="dl-date">Fri 9 Oct · 23:59</span>
+                </div>
+              </div>
+              <div class="deadline-item" data-countdown="2026-10-16">
+                <div class="deadline-count"><b>29</b><small>days</small></div>
+                <div>
+                  <h4>Club funding applications</h4>
+                  <span class="dl-date">Fri 16 Oct · 17:00</span>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Campus IQ — home">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="brand-name">Campus <em>IQ</em></span>
+          </a>
+          <p>The student platform for Kamulu University — your timetable, campus, events and an assistant that always knows.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="assistant.html">IQ Assistant</a></li>
+            <li><a href="events.html">Events & deadlines</a></li>
+            <li><a href="academics.html">Timetable & grades</a></li>
+            <li><a href="campus.html">Campus map</a></li>
+            <li><a href="community.html">Clubs & community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>University</h4>
+          <ul>
+            <li><a href="about.html">About Campus IQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="community.html">Notice board</a></li>
+            <li><a href="campus.html#dining">Dining</a></li>
+            <li><a href="campus.html#shuttles">Shuttles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Say hello</h4>
+          <ul>
+            <li><a href="mailto:student.life@kamu.ac.ke">student.life@kamu.ac.ke</a></li>
+            <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+            <li><a href="campus.html">Student Centre, 1st floor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Campus IQ · Kamulu University, Nairobi</span>
+        <span class="mono">Press ⌘K to jump anywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== COMMAND PALETTE ===================== -->
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="palette-panel">
+      <div class="palette-input-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Jump to a page or service…" aria-label="Search">
+      </div>
+      <div class="palette-list"></div>
+      <div class="palette-foot"><span><b>↑ ↓</b> navigate</span><span><b>↵</b> open</span><span><b>esc</b> close</span></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

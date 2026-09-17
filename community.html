@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community & Clubs — Campus IQ</title>
+  <meta name="description" content="38 clubs and societies at Kamulu University, the official notice board, and a place to be found.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%235E6E4C'/%3E%3Cpath d='M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z' fill='none' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3Cpath d='M16 11v15' stroke='%23F5F0E6' stroke-width='2.4'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="community">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Campus IQ — home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="brand-name">Campus <em>IQ</em></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="assistant.html">Assistant</a>
+        <a class="nav-link" href="events.html">Events</a>
+        <a class="nav-link" href="academics.html">Academics</a>
+        <a class="nav-link" href="campus.html">Campus</a>
+        <a class="nav-link active" href="community.html">Community</a>
+        <a class="nav-link" href="about.html">About</a>
+      </nav>
+      <div class="header-actions">
+        <span class="kbd-hint" data-open-palette title="Open quick navigation"><kbd>⌘</kbd><kbd>K</kbd></span>
+        <a class="btn btn-primary btn-sm" href="assistant.html">Launch IQ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile">
+      <a class="m-link" href="index.html"><span class="m-num">01</span>Home</a>
+      <a class="m-link" href="assistant.html"><span class="m-num">02</span>Assistant</a>
+      <a class="m-link" href="events.html"><span class="m-num">03</span>Events</a>
+      <a class="m-link" href="academics.html"><span class="m-num">04</span>Academics</a>
+      <a class="m-link" href="campus.html"><span class="m-num">05</span>Campus</a>
+      <a class="m-link active" href="community.html"><span class="m-num">06</span>Community</a>
+      <a class="m-link" href="about.html"><span class="m-num">07</span>About</a>
+      <a class="m-link" href="contact.html"><span class="m-num">08</span>Contact</a>
+    </nav>
+    <div class="mobile-menu-foot">
+      <span>Kamulu University · 2026</span>
+      <span class="mono">Nairobi, KE</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="kicker">Community</span>
+        <h1 class="display-xl" style="margin-top:1.2rem">Find your <span class="accent" style="font-style:italic;color:var(--moss-deep)">people.</span></h1>
+        <p class="lead">38 clubs, one notice board and a fair that happens every Saturday for the next month. Joining is one tap — leaving is one tap, no guilt trips.</p>
+        <div class="page-hero-meta">
+          <span class="chip chip--solid">38 active clubs</span>
+          <span class="chip chip--clay">Freshers' Fair · Sat 19 Sep</span>
+          <span class="chip">Funding deadline · 16 Oct</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CLUBS ============ -->
+    <section class="section--tight" style="padding-top:0">
+      <div class="container">
+        <div class="filter-row">
+          <button class="filter-btn active" data-club="all">All</button>
+          <button class="filter-btn" data-club="tech">Tech</button>
+          <button class="filter-btn" data-club="arts">Arts</button>
+          <button class="filter-btn" data-club="sports">Sports</button>
+          <button class="filter-btn" data-club="cultural">Cultural</button>
+          <button class="filter-btn" data-club="service">Service</button>
+          <button class="filter-btn" data-club="media">Media</button>
+        </div>
+
+        <div class="grid grid-3">
+          <div class="card club-card reveal" data-cat="tech">
+            <div class="club-top">
+              <div class="club-avatar">CC</div>
+              <span class="chip chip--solid">Tech</span>
+            </div>
+            <h3>Code Collective</h3>
+            <p>Weekly coding circles, the campus' most organised hackathon crew, and the group that fixes the notice-board printer out of spite.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="342">342 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="tech" data-delay="1">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--clay">RA</div>
+              <span class="chip chip--solid">Tech</span>
+            </div>
+            <h3>Robotics &amp; AI Society</h3>
+            <p>Line-followers, a working rover, and the campus' only 3D printer that isn't in the makerspace. Meetings smell faintly of solder.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="198">198 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="sports" data-delay="2">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--stone">RC</div>
+              <span class="chip chip--clay">Sports</span>
+            </div>
+            <h3>Running Club</h3>
+            <p>Tuesday 06:00 laps of the West Loop, long runs every Sunday. No pace gates — the slowest runner gets the slowest cheer, loudly.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="276">276 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="arts">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--clay">MD</div>
+              <span class="chip chip--clay">Arts</span>
+            </div>
+            <h3>Mzalendo Drama</h3>
+            <p>Two full productions a year in the Arts Auditorium. Current rehearsal: a musical about the shuttle timetables. It's very funny.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="154">154 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="cultural" data-delay="1">
+            <div class="club-top">
+              <div class="club-avatar">GB</div>
+              <span class="chip">Cultural</span>
+            </div>
+            <h3>Goma &amp; Beats</h3>
+            <p>Kapenta night? They're there. The drum circle on the Great Lawn every Friday 17:00 — bring your hands, the gomas are provided.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="411">411 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="media" data-delay="2">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--stone">Q</div>
+              <span class="chip chip--clay">Media</span>
+            </div>
+            <h3>The Quill</h3>
+            <p>The student paper and campus podcast. Investigates the dining menu, reviews the lecture halls, and occasionally gets the provost to smile.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="87">87 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="service">
+            <div class="club-top">
+              <div class="club-avatar">GC</div>
+              <span class="chip chip--solid">Service</span>
+            </div>
+            <h3>Green Campus</h3>
+            <p>The tree-planting crew, the compost corner and the people who wrote off two plastic cups last semester. The 10 Oct planting is 200 seedlings.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="233">233 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="sports" data-delay="1">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--clay">NC</div>
+              <span class="chip chip--clay">Sports</span>
+            </div>
+            <h3>Netball Club</h3>
+            <p>Leagues on the Sports Complex courts, two divisions, one very competitive warm-up game. Sunday 08:00, all levels welcome.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="168">168 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="arts" data-delay="2">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--stone">PC</div>
+              <span class="chip chip--clay">Arts</span>
+            </div>
+            <h3>Photography Circle</h3>
+            <p>Darkroom Fridays, golden-hour walks and the annual "Campus in 365" exhibition. Borrow a camera from the club kit — just bring it back.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="129">129 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="media">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--clay">RI</div>
+              <span class="chip chip--clay">Media</span>
+            </div>
+            <h3>Radio IQ</h3>
+            <p>Student radio, 07:00–22:00 on campus FM. Morning show, exam-week study sessions with lo-fi, and the 21:00 open-mic that is always chaos.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="76">76 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="service" data-delay="1">
+            <div class="club-top">
+              <div class="club-avatar">HB</div>
+              <span class="chip chip--solid">Service</span>
+            </div>
+            <h3>Health Buddies</h3>
+            <p>Peer first-aid, clinic wayfinding and the calm voices on the counselling floor. Training is a Saturday a month — well worth it.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="143">143 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+          <div class="card club-card reveal" data-cat="tech" data-delay="2">
+            <div class="club-top">
+              <div class="club-avatar club-avatar--stone">DG</div>
+              <span class="chip chip--solid">Tech</span>
+            </div>
+            <h3>DevOps Guild</h3>
+            <p>Keeps the campus Wi-Fi from dying on deadline night (mostly). Runs the server-room watch rota and the annual uptime bake-off.</p>
+            <div class="club-foot">
+              <span class="club-members" data-n="94">94 members</span>
+              <button class="join-btn">Join</button>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:1.6rem; font-size:.9rem; color:var(--stone)">
+          Showing 12 of 38 — the full list lives in the portal. New clubs apply for funding by <b style="color:var(--ink)">16 Oct</b>.
+        </p>
+      </div>
+    </section>
+
+    <hr class="hairline">
+
+    <!-- ============ NOTICE BOARD ============ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="kicker">Notice board</span>
+          <h2 class="display-lg">Official, this week.</h2>
+          <p class="lead">Pinned by the Student Affairs office. If it's here, it's real; if it's only on someone's status, check again.</p>
+        </div>
+        <div class="notice-list reveal">
+          <div class="notice">
+            <span class="n-date">16 Sep</span>
+            <div>
+              <h4>Exam timetable drops 24 Sep, 09:00</h4>
+              <p>Published on the portal and flagged by IQ. Library goes 24/7 from Mon 5 Oct.</p>
+            </div>
+            <span class="chip n-badge">Academic</span>
+          </div>
+          <div class="notice">
+            <span class="n-date">15 Sep</span>
+            <div>
+              <h4>Water maintenance — North Halls, 21 Sep 06:00–10:00</h4>
+              <p>Fill jerricans the night before. Hot water unaffected.</p>
+            </div>
+            <span class="chip n-badge">Facilities</span>
+          </div>
+          <div class="notice">
+            <span class="n-date">12 Sep</span>
+            <div>
+              <h4>Clubs: 2026/27 funding applications open</h4>
+              <p>Up to KSh 60,000 per club. Submit via the portal, deadline Fri 16 Oct, 17:00.</p>
+            </div>
+            <span class="chip n-badge">Student Affairs</span>
+          </div>
+          <div class="notice">
+            <span class="n-date">10 Sep</span>
+            <div>
+              <h4>Lost &amp; found: 3 phones, 14 cards, 1 very good umbrella</h4>
+              <p>All with the front desk at the Student Centre. The umbrella claims to have a name.</p>
+            </div>
+            <span class="chip n-badge">Community</span>
+          </div>
+          <div class="notice">
+            <span class="n-date">8 Sep</span>
+            <div>
+              <h4>West Loop shuttles now every 20 minutes at peak</h4>
+              <p>From 1 Sep timetables, 07:00–09:00 and 16:00–19:00. No fare change.</p>
+            </div>
+            <span class="chip n-badge">Transport</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUGGESTION ============ -->
+    <section class="section section--tight" style="padding-top:0">
+      <div class="container">
+        <div class="contact-layout">
+          <div class="reveal">
+            <span class="kicker">Your turn</span>
+            <h2 class="display-md" style="margin:1.2rem 0 1rem">Pitch a new club or event.</h2>
+            <p class="lead">Ideas that get three co-signers in a week go straight to the Student Affairs review. Last term, a coffee-tasting society was born this exact way.</p>
+          </div>
+          <div class="form-card reveal" data-delay="1">
+            <form class="form-body" data-form data-success="Pitch sent to Student Affairs — co-signers will be asked by email.">
+              <h3 class="f-title">Send a pitch</h3>
+              <p class="f-sub">2 minutes, no commitment. Co-signers get a link.</p>
+              <div class="form-row">
+                <div class="field">
+                  <label for="pitchName">Your name</label>
+                  <input id="pitchName" type="text" required placeholder="e.g. Wanjiru N.">
+                  <div class="f-err">Please tell us who's pitching.</div>
+                </div>
+                <div class="field">
+                  <label for="pitchEmail">Campus email</label>
+                  <input id="pitchEmail" type="email" required placeholder="you@kamu.ac.ke">
+                  <div class="f-err">A valid campus email is required.</div>
+                </div>
+              </div>
+              <div class="field">
+                <label for="pitchIdea">The idea, in one line</label>
+                <input id="pitchIdea" type="text" required placeholder="e.g. A chess society that actually plays">
+                <div class="f-err">Give the idea a line to hang on.</div>
+              </div>
+              <button class="btn btn-clay" type="submit">Send the pitch
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              </button>
+            </form>
+            <div class="form-success">
+              <div class="success-ring">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              </div>
+              <h3>Pitch received.</h3>
+              <p>Student Affairs reads them every Monday. If it catches three co-signers, you'll be on the Fair table in time for October.</p>
+              <span class="ref">Ref CIQ-XXXXX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html" aria-label="Campus IQ — home">
+            <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect x="1" y="1" width="30" height="30" rx="9" fill="#5E6E4C"/><path d="M16 7c-5 3.2-7.5 7-7.5 11 0 4.5 3.4 8 7.5 8s7.5-3.5 7.5-8c0-4-2.5-7.8-7.5-11Z" fill="none" stroke="#F5F0E6" stroke-width="2.2" stroke-linejoin="round"/><path d="M16 11v15" stroke="#F5F0E6" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="brand-name">Campus <em>IQ</em></span>
+          </a>
+          <p>The student platform for Kamulu University — your timetable, campus, events and an assistant that always knows.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="X (Twitter)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l16 16M20 4L4 20"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3V9Z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="assistant.html">IQ Assistant</a></li>
+            <li><a href="events.html">Events & deadlines</a></li>
+            <li><a href="academics.html">Timetable & grades</a></li>
+            <li><a href="campus.html">Campus map</a></li>
+            <li><a href="community.html">Clubs & community</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>University</h4>
+          <ul>
+            <li><a href="about.html">About Campus IQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="community.html">Notice board</a></li>
+            <li><a href="campus.html#dining">Dining</a></li>
+            <li><a href="campus.html#shuttles">Shuttles</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Say hello</h4>
+          <ul>
+            <li><a href="mailto:student.life@kamu.ac.ke">student.life@kamu.ac.ke</a></li>
+            <li><a href="tel:+254700123456">+254 700 123 456</a></li>
+            <li><a href="campus.html">Student Centre, 1st floor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Campus IQ · Kamulu University, Nairobi</span>
+        <span class="mono">Press ⌘K to jump anywhere</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== COMMAND PALETTE ===================== -->
+  <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="palette-panel">
+      <div class="palette-input-wrap">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="text" placeholder="Jump to a page or service…" aria-label="Search">
+      </div>
+      <div class="palette-list"></div>
+      <div class="palette-foot"><span><b>↑ ↓</b> navigate</span><span><b>↵</b> open</span><span><b>esc</b> close</span></div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
