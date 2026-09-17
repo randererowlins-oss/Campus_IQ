@@ -423,6 +423,51 @@
     document.querySelectorAll("[data-open-palette]").forEach((b) => b.addEventListener("click", open));
   }
 
+  /* ---------- Scroll progress + floating IQ button ---------- */
+  const prog = document.createElement("div");
+  prog.className = "scroll-progress";
+  prog.setAttribute("aria-hidden", "true");
+  document.body.appendChild(prog);
+
+  let fab = null;
+  if (page !== "assistant") {
+    fab = document.createElement("a");
+    fab.className = "fab";
+    fab.href = "assistant.html";
+    fab.setAttribute("aria-label", "Ask IQ — open the assistant");
+    fab.innerHTML =
+      '<span class="fab-dot" aria-hidden="true"></span>Ask IQ' +
+      '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+    document.body.appendChild(fab);
+  }
+  const onScrollUI = () => {
+    const h = document.documentElement;
+    const max = h.scrollHeight - h.clientHeight;
+    prog.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+    if (fab) fab.classList.toggle("show", h.scrollTop > 560 && !mobileMenuOpen());
+  };
+  function mobileMenuOpen() {
+    return !!(mobileMenu && mobileMenu.classList.contains("open"));
+  }
+  window.addEventListener("scroll", onScrollUI, { passive: true });
+  onScrollUI();
+
+  /* ---------- Skip link ---------- */
+  const mainEl = document.querySelector("main");
+  if (mainEl && !mainEl.id) mainEl.id = "main";
+  const skip = document.createElement("a");
+  skip.className = "skip-link";
+  skip.href = "#main";
+  skip.textContent = "Skip to content";
+  document.body.prepend(skip);
+
+  /* ---------- Platform-aware ⌘ / Ctrl hint ---------- */
+  if (!/Mac|iPhone|iPad|iPod/i.test(navigator.platform || "")) {
+    document.querySelectorAll(".kbd-hint kbd").forEach((k, i) => {
+      if (i === 0) k.textContent = "Ctrl";
+    });
+  }
+
   /* ---------- Footer year ---------- */
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 })();
